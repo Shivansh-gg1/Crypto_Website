@@ -61,7 +61,7 @@ ETH/USD
 
 USD 3,480.04
 
-+10.55%
+    +10.55%
 
 alt = tether logo
 

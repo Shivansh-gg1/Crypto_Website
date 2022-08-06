@@ -1,16 +1,15 @@
 'use strict';
 
 // add event on element
-
 const addEventOnElem = function (elem, type, callback) {
     if (elem.length > 1) {
-        for (let i = 0; i < elem.length; i++) {
-            elem[i].addEventOnElem(type, callback);
-        }
+      for (let i = 0; i < elem.length; i++) {
+        elem[i].addEventListener(type, callback);
+      }
     } else {
-        elem.addEventOnElem(type, callback);
+      elem.addEventListener(type, callback);
     }
-}
+  }
 
 
 // navbar toggle
@@ -46,4 +45,4 @@ const activeHeader = function () {
     }
 }
 
-activeHeader(window, "scroll", activeHeader);
+addEventOnElem(window, "scroll", activeHeader);
