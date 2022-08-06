@@ -45,3 +45,5 @@ const activeHeader = function () {
         header.classList.remove("active");
     }
 }
+
+activeHeader(window, "scroll", activeHeader);
